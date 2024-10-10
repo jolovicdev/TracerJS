@@ -15,6 +15,7 @@ Simply copy the `Tracer.JS` content into your JavaScript file or include it as a
 Use the `getConsistentFingerprint` function to generate a unique fingerprint for a user's browser environment:
 
 ```javascript
-getConsistentFingerprint().then(fingerprint => {
-    console.log('Consistent Fingerprint:', fingerprint);
+generateAdvancedFingerprint().then(({ fingerprintData, finalHash }) => {
+    console.log('Fingerprint Data:', fingerprintData);
+    console.log('Final SHA-256 Hash:', finalHash);
 });
